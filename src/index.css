@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Noto+Serif:wght@300;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #faf9f4;
+  --color-on-background: #1b1c19;
+  --color-surface: #faf9f4;
+  --color-on-surface: #1b1c19;
+  --color-surface-container-highest: #e3e3de;
+  --color-surface-container: #efeee9;
+  --color-surface-container-low: #f5f4ef;
+  --color-on-surface-variant: #50453b;
+  --color-primary: #79542e;
+  --color-outline: #82756a;
+  
+  --color-wba-bg: #faf9f4;
+  --color-wba-surface: #efeee9;
+  --color-wba-surface-highlight: #f5f4ef;
+  --color-wba-text: #1b1c19;
+  --color-wba-muted: #50453b;
+  --color-wba-accent: #A67C52;
+  --color-wba-border: #e3e3de;
+  
+  --font-body: "Manrope", sans-serif;
+  --font-headline: "Noto Serif", serif;
+  --font-label: "Manrope", sans-serif;
+  --font-display: "Noto Serif", serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-family: var(--font-body);
+  }
+}
+
+.bg-noise {
+  background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.05"/%3E%3C/svg%3E');
+}
+
+.btn-primary {
+  @apply bg-wba-text text-wba-bg hover:bg-wba-accent hover:text-white transition-colors duration-300 uppercase;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-wba-text text-wba-text hover:bg-wba-text hover:text-wba-bg transition-colors duration-300 uppercase;
+}

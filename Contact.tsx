@@ -144,12 +144,12 @@ export function Contact() {
             </div>
             
             <div className="pt-8 border-t border-surface-container-highest">
-              <h3 className="font-label text-xs uppercase tracking-[0.15em] font-semibold text-on-surface-variant mb-4">Direct Communication</h3>
-              <button className="font-label text-xs uppercase tracking-[0.15em] font-semibold bg-transparent text-on-background border border-on-background px-6 py-4 hover:bg-on-background hover:text-background transition-all duration-300 flex items-center justify-center gap-3 w-full">
-                <MessageCircle size={18} />
-                Connect on WhatsApp
-              </button>
-            </div>
+  <h3 className="font-label text-xs uppercase tracking-[0.15em] font-semibold text-on-surface-variant mb-4">Direct Communication</h3>
+  <a href="https://wa.me/628179773616" target="_blank" rel="noreferrer" className="font-label text-xs uppercase tracking-[0.15em] font-semibold bg-transparent text-on-background border border-on-background px-6 py-4 hover:bg-on-background hover:text-background transition-all duration-300 flex items-center justify-center gap-3 w-full">
+    <MessageCircle size={18} />
+    Connect on WhatsApp
+  </a>
+</div>
             
             <div className="pt-8 border-t border-surface-container-highest">
               <h3 className="font-label text-xs uppercase tracking-[0.15em] font-semibold text-on-surface-variant mb-4">Headquarters</h3>

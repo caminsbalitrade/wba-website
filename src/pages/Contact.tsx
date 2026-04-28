@@ -51,7 +51,9 @@ export function Contact() {
         <div className="col-span-1 lg:col-span-7 bg-surface-container-low border border-surface-container-highest p-8 md:p-12">
           <h2 className="font-headline text-[32px] leading-[1.3] text-on-background mb-8">Inquiry Form</h2>
           
-          <form onSubmit={handleSubmit} className="space-y-8">
+          <form action="https://api.web3forms.com/submit" method="POST" className="space-y-8">
+  <input type="hidden" name="access_key" value="092f1492-3423-431d-a68f-645f63dd6e3d" />
+  <input type="hidden" name="redirect" value="https://wbainternational.com/contact" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="relative">
                 <label htmlFor="firstName" className="font-label text-xs uppercase tracking-[0.15em] font-semibold text-on-surface-variant block mb-2">First Name</label>
